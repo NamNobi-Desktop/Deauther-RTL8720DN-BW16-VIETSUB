@@ -38,7 +38,9 @@ Sau khi kết nối hệ thống sẽ hiện cho bạn 1 trang Web để thao t�
 
 
 
-
+> [!IMPORTANT]
+**ĐOẠN MÃ CÓ THỂ KHÔNG ĐÚNG NHƯ BẠN MONG MUỐN** <br/>
+  Đoạn mã không giống với phần mô tả, bạn hãy liên hệ với người chỉnh sửa để có bản Vietsub và Thuần Việt do bản quyền bị hạn chế nên không thể trực tiếp đăng tải trên Github công khai được, mong bạn thông cảm và liên hệ qua Faceboock sau :
 
 
 # Deauther-RTL8720DN-BW16 <br/>
