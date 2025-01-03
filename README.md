@@ -18,7 +18,7 @@ Sau khi kết nối hệ thống sẽ hiện cho bạn 1 trang Web để thao t�
 
 > [!NOTE]
 **Lưu Ý:** <br/>
-<ins> Nếu bạn lần đầu nạp code thì cần xóa mạc định của mạch, như vậy mạch mới chạy được code mới !</ins>
+<ins> Nếu bạn lần đầu nạp code thì cần xóa mạc định của mạch, như vậy mạch mới chạy được code mới !</ins><br/>
 **Sau đây là tiến trình sử dụng** <br/>
 
 
