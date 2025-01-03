@@ -1,6 +1,8 @@
 
 ![z6194456822918_275ed57c65cda6dfc83d8002900bc273 (1) (1)](https://github.com/user-attachments/assets/ac310a6f-ec8b-445b-8f53-3e308980b37c)
 
+![375500205-ab8ebf84-eee2-4298-8975-2e8dad13c1b3 (1) (1)](https://github.com/user-attachments/assets/87318f2d-eaf6-4681-ab94-ceb35d53e1e7)
+
 
 
 # Từ chối trách nhiệm!
@@ -11,18 +13,18 @@
 >Bằng việc sử dụng kho lưu trữ này, bạn đồng ý với các điều khoản trên và xác nhận rằng bạn tự chịu trách nhiệm tuân thủ mọi quy định pháp luật hoặc quy tắc có liên quan.
 <ins>**CÓ NGHĨA LÀ KHI BẠN SỬ DỤNG ĐOẠN MÃ ĐƯỢC VIẾT Ở TRÊN LÀ BẠN HOÀN TOÀN CHỊU TRÁCH NHIỆM, VIỆC BẠN SỬ DỤNG SẼ KHÔNG LIÊN QUAN ĐẾN NGƯỜI PHÁT HÀNH ĐOẠN MÃ TRÊN !**</ins>
 
-### Hướng dẫn sử dụng 
+# Hướng dẫn sử dụng 
 Bạn kết nối đến wifi có tên SSID "Deauther_2-4_5GHZ", Mật khẩu : "123456789"<br/>
 Sau khi kết nối bạn tiến hành truy cập địa chỉ bằng 1 trình duyệt bất kỳ(mình đề xuất là <ins> Chrome </ins> ) : " 192.168.4.1 "<br/>
 Sau khi kết nối hệ thống sẽ hiện cho bạn 1 trang Web để thao tác và sử dụng trên giao diện này, tất cả điều là tiếng việt bạn hãy thao tác như những gì trên đó hiện thị !<br/>
 
-> [!NOTE]
-**Lưu Ý:** <br/>
-<ins> Nếu bạn lần đầu nạp code thì cần xóa mạc định của mạch, như vậy mạch mới chạy được code mới !</ins><br/><br/>
+
+> [!TIP]
+<ins> Nếu bạn lần đầu nạp code thì cần xóa mạc định của mạch, như vậy mạch mới chạy được code mới !</ins>
 
 
 
-# Sau đây là tiến trình sử dụng <br/>
+### Sau đây là tiến trình sử dụng <br/>
 **Kết nối với wifi tên"Deauther_2-4_5GHZ"** <br/>
 <br/>![z6194572247215_327ab7c6442209a7bbf20da4d6fc2991 (1)](https://github.com/user-attachments/assets/64a364e7-4764-4672-8b18-31740a264378)
 
@@ -39,4 +41,7 @@ Sau khi kết nối hệ thống sẽ hiện cho bạn 1 trang Web để thao t�
 
 
 
-# Deauther-RTL8720DN-BW16
+# Deauther-RTL8720DN-BW16 <br/>
+> [!NOTE]
+> Mã nguồn mở này được cung cấp bởi chủ sở hữu bên dưới, mọi quyền sở hữu cũng như các quyền liên quan điều ở  "https://github.com/tesa-klebeband/RTL8720dn-Deauther.git".<br/>
+![375500205-ab8ebf84-eee2-4298-8975-2e8dad13c1b3 (1) (1)](https://github.com/user-attachments/assets/b980ded6-c9d4-4ce6-9e92-f11be1c0f01b)
