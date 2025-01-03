@@ -1,5 +1,5 @@
 
-![z6194456822918_275ed57c65cda6dfc83d8002900bc273](https://github.com/user-attachments/assets/dbf7d87a-541f-4325-83aa-142ec7e26c94)
+![z6194456822918_275ed57c65cda6dfc83d8002900bc273 (1) (1)](https://github.com/user-attachments/assets/ac310a6f-ec8b-445b-8f53-3e308980b37c)
 
 
 
@@ -11,15 +11,29 @@
 >Bằng việc sử dụng kho lưu trữ này, bạn đồng ý với các điều khoản trên và xác nhận rằng bạn tự chịu trách nhiệm tuân thủ mọi quy định pháp luật hoặc quy tắc có liên quan.
 <ins>**CÓ NGHĨA LÀ KHI BẠN SỬ DỤNG ĐOẠN MÃ ĐƯỢC VIẾT Ở TRÊN LÀ BẠN HOÀN TOÀN CHỊU TRÁCH NHIỆM, VIỆC BẠN SỬ DỤNG SẼ KHÔNG LIÊN QUAN ĐẾN NGƯỜI PHÁT HÀNH ĐOẠN MÃ TRÊN !**</ins>
 
-# Hướng dẫn sử dụng 
+### Hướng dẫn sử dụng 
 Bạn kết nối đến wifi có tên SSID "Deauther_2-4_5GHZ", Mật khẩu : "123456789"<br/>
 Sau khi kết nối bạn tiến hành truy cập địa chỉ bằng 1 trình duyệt bất kỳ(mình đề xuất là <ins> Chrome </ins> ) : " 192.168.4.1 "<br/>
 Sau khi kết nối hệ thống sẽ hiện cho bạn 1 trang Web để thao tác và sử dụng trên giao diện này, tất cả điều là tiếng việt bạn hãy thao tác như những gì trên đó hiện thị !<br/>
 
 > [!NOTE]
 **Lưu Ý:** <br/>
-<ins> Nếu bạn lần đầu nạp code thì cần xóa mạc định của mạch, như vậy mạch mới chạy được code mới !</ins><br/>
-**Sau đây là tiến trình sử dụng** <br/>
+<ins> Nếu bạn lần đầu nạp code thì cần xóa mạc định của mạch, như vậy mạch mới chạy được code mới !</ins><br/><br/>
+
+
+
+# Sau đây là tiến trình sử dụng <br/>
+**Kết nối với wifi tên"Deauther_2-4_5GHZ"** <br/>
+<br/>![z6194572247215_327ab7c6442209a7bbf20da4d6fc2991 (1)](https://github.com/user-attachments/assets/64a364e7-4764-4672-8b18-31740a264378)
+
+**Chọn mạng mục tiêu để bắt đầu Deauth trong khung "Chọn mạng" sau khi chọn xong thì bấm vào "Bắt Đầu Tấn Công Deauth"** <br/>
+
+<br/>![z6194572303632_4c36b23dd95c6d95701ae82c1fdc4e13](https://github.com/user-attachments/assets/a04721e0-840f-42f9-b0c3-78984b425388)<br/>
+
+**Sau khi bấm vào "Bắt Đầu Tấn Công Deauth" bạn sẽ được chuyển đến trang theo dõi tấn công deauth**
+
+<br/>![z6194572319051_ef8613cc59c2a214e721b365f3c094f6](https://github.com/user-attachments/assets/dc14c0af-fe22-4cc4-8598-8607f2ea0115)<br/>
+
 
 
 
