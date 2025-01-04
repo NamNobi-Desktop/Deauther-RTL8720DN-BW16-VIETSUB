@@ -14,15 +14,19 @@
 <ins>**CÓ NGHĨA LÀ KHI BẠN SỬ DỤNG ĐOẠN MÃ ĐƯỢC VIẾT Ở TRÊN LÀ BẠN HOÀN TOÀN CHỊU TRÁCH NHIỆM, VIỆC BẠN SỬ DỤNG SẼ KHÔNG LIÊN QUAN ĐẾN NGƯỜI PHÁT HÀNH ĐOẠN MÃ TRÊN !**</ins>
 
 # Hướng dẫn sử dụng
-Bạn truy cập vào liên kết sau để tải về bộ Deauther đầy đủ : **https://github.com/NamNobi-Desktop/Deauther-RTL8720DN-BW16-Vietsub/archive/refs/heads/main.zip** Hoặc bạn có thể tìm đến mục"**Code**" ở phía trên và chọn vào "**Download ZIP**" Để tải bộ công cụ <br/>
-Sau khi bạn tải về thì bạn mở file lên và tìm mục có tên "``Deauther_2-4_5GHZ``" <br/>
+Bạn truy cập vào liên kết sau để tải về bộ Deauther đầy đủ : ***https://github.com/NamNobi-Desktop/Deauther-RTL8720DN-BW16-Vietsub/archive/refs/heads/main.zip*** Hoặc bạn có thể tìm đến mục"**Code**" ở phía trên và chọn vào "**Download ZIP**" Để tải bộ công cụ về máy . <br/>
 
-
-
-
-- Bạn kết nối đến wifi có tên SSID "``Deauther_2-4_5GHZ``", Mật khẩu : "``123456789``"<br/>
- - Sau khi kết nối bạn tiến hành truy cập địa chỉ bằng 1 trình duyệt bất kỳ (mình đề xuất ở đây là <ins> **Chrome** </ins> ) : "`192.168.4.1`"<br/>
-   - Sau khi kết nối hệ thống sẽ hiện cho bạn 1 trang Web để thao tác và sử dụng trên giao diện này, tất cả điều là tiếng việt bạn hãy thao tác như những gì trên đó hiện thị !<br/>
+- Sau khi bạn tải về thì bạn mở file lên và tìm mục có tên "``Deauther_2-4_5GHZ``" bạn click mở tệp này lên<br/>
+ Sau khi bạn mở lên bạn sẽ được chuyển đến **Adruino** <br/>
+Tìm **File** ở bên góc trái màn hình và chọn **Preferences** ở dòng **Additional boards manager URLs:** bạn dán đường link này vào `https://github.com/ambiot/ambd_arduino/raw/master/Arduino_package/package_realtek_amebad_index.json` và bấm **OK** để hoàn tất  <br/>
+Trong **Adruino** bạn tìm ••• bên góc bên phải màn hình và chọn **New Tab** để thêm các tệp còn lại trong File<br/>
+Bạn tiến hành thêm 3 tệp có tên **"debung.h"**,  **"wifi_cust_tx.cpp"**,  **"wifi_cust_tx.h"**. <br/>
+Bạn tiến hành **Nạp Code** bằng nút mũi tên ➡️ góc trái màn hình<br/>
+Chờ nạp chương trình hoàn tất và hiện dòng **Upload Image done** là bạn đã hoàn thành việc nạp trương trình cho mạch **RTL8720DN**<br/><br/>
+-  Trên thiết bị di động(Điện Thoại)<br/>
+Bạn kết nối đến wifi có tên SSID "**``Deauther_2-4_5GHZ``**", Mật khẩu : "**``123456789``**"<br/>
+Sau khi kết nối bạn tiến hành truy cập địa chỉ bằng 1 trình duyệt bất kỳ (mình đề xuất ở đây là <ins> **Chrome**) với địa chỉ sau </ins>  : "**`192.168.4.1`**"<br/>
+Sau khi kết nối hệ thống sẽ hiện cho bạn 1 trang Web để thao tác và sử dụng trên giao diện này, tất cả điều là tiếng Việt bạn hãy thao tác như những gì trên đó hiện thị !<br/>
 
 
 > [!TIP]
