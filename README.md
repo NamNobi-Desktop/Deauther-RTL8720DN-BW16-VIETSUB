@@ -57,8 +57,10 @@ Sau khi kết nối hệ thống sẽ hiện cho bạn 1 trang Web để thao t�
 > [!IMPORTANT]
 **ĐOẠN MÃ CÓ THỂ KHÔNG ĐÚNG NHƯ BẠN MONG MUỐN** <br/>
   Đoạn mã không giống với phần mô tả, hoặc không hoạt động được bạn hãy liên hệ với người chỉnh sửa để có bản Vietsub và Thuần Việt do bản quyền bị hạn chế nên không thể trực tiếp đăng tải trên Github công khai được, mong bạn thông cảm và liên hệ qua đường link sau :
-**<ins> https://m.me/Namnobi.nobita </ins>**
-
+**<ins> https://m.me/Namnobi.nobita </ins>**<br/><br/>
+**HOẶC BẠN CÓ THỂ MUA SẢN PHẨM ĐÃ ĐƯỢC HOÀN THIỆN Ở ĐƯỜNG LINK SAU :** <br/>
+Sản phẩm nay mang lại độ hoàn thiện của đoạn code trên mang lại sự mạnh mẽ trong việc deauther các mục tiêu, và thêm tính năng ẩn tên wifi theo yêu cầu giúp người khác không thể nhận ra là có thiết bị đang deauther ở gần !
+## <ins> https://vn.shp.ee/cqG7dWj </ins>
 
 # Deauther-RTL8720DN-BW16 <br/>
 > [!NOTE]
