@@ -61,7 +61,7 @@ Sau khi kết nối hệ thống sẽ hiện cho bạn 1 trang Web để thao t�
 **HOẶC BẠN CÓ THỂ MUA SẢN PHẨM ĐÃ ĐƯỢC HOÀN THIỆN Ở ĐƯỜNG LINK SAU :** <br/>
 Sản phẩm nay mang lại độ hoàn thiện của đoạn code trên mang lại sự mạnh mẽ trong việc deauther các mục tiêu, và thêm tính năng ẩn tên wifi theo yêu cầu giúp người khác không thể nhận ra là có thiết bị đang deauther ở gần !
 ## <ins> https://vn.shp.ee/cqG7dWj </ins> <br/>
-![Nhohonnua](https://github.com/user-attachments/assets/f6b13ee1-0e37-49e9-94b5-88ccbd347874) ![nhohonnua2](https://github.com/user-attachments/assets/96f5e05a-b127-4fab-9dd4-341dbbe026cf) ![nhohonnua3](https://github.com/user-attachments/assets/cf5c2a7b-196b-4358-ac72-7624b8032ddf)
+
 
 
 
