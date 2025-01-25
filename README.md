@@ -8,8 +8,8 @@
 **Video-Demo**
 https://github.com/user-attachments/assets/1eb93835-09f3-4430-a3e1-1f4ca8670073
 
-
-
+**Video Hướng Dẫn Cách Nạp Lần Đầu :**
+https://youtu.be/zHqKPRQ3pYo?si=s-yyb0RTVPheCdtm
 
 # Từ chối trách nhiệm!
 
