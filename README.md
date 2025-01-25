@@ -26,7 +26,7 @@ Bạn truy cập vào liên kết sau để tải về bộ Deauther đầy đ�
  Sau khi bạn mở lên bạn sẽ được chuyển đến **Adruino** <br/>
 Tìm **File** ở bên góc trái màn hình và chọn **Preferences** ở dòng **Additional boards manager URLs:** bạn dán đường link này vào `https://github.com/ambiot/ambd_arduino/raw/master/Arduino_package/package_realtek_amebad_index.json` và bấm **OK** để hoàn tất  <br/>
 Trong **Adruino** bạn tìm ••• bên góc bên phải màn hình và chọn **New Tab** để thêm các tệp còn lại trong File<br/>
-Bạn tiến hành thêm 3 tệp có tên **"debung.h"**,  **"wifi_cust_tx.cpp"**,  **"wifi_cust_tx.h"**. <br/>
+Bạn tiến hành thêm 3 tệp có tên **"debug.h"**,  **"wifi_cust_tx.cpp"**,  **"wifi_cust_tx.h"**. <br/>
 Bạn tiến hành **Nạp Code** bằng nút mũi tên ➡️ góc trái màn hình<br/>
 Chờ nạp chương trình hoàn tất và hiện dòng **Upload Image done** là bạn đã hoàn thành việc nạp trương trình cho mạch **RTL8720DN**<br/><br/>
 -  Trên thiết bị di động(Điện Thoại)<br/>
