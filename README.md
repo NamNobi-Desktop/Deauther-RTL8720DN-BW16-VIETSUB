@@ -14,7 +14,7 @@ https://youtu.be/zHqKPRQ3pYo?si=s-yyb0RTVPheCdtm
 **Video Hướng Dẫn Cách Nạp Code Deauther :**
  **https://youtu.be/Sd7pXUONJQg?si=1A5Zq2d1Kr36Apxs**
 
-**Video Trải Nghiệm**
+**Video Trải Nghiệm :**
  **https://youtu.be/8u7V6v-tTYo?si=PYHyhIZ2McWOyO42**
 # Từ chối trách nhiệm!
 
