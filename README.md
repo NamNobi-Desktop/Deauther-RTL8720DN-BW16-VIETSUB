@@ -16,6 +16,9 @@ https://youtu.be/zHqKPRQ3pYo?si=s-yyb0RTVPheCdtm
 
 **Video Trải Nghiệm :**
  **https://youtu.be/8u7V6v-tTYo?si=PYHyhIZ2McWOyO42**
+
+**Link Sản Phẩm**
+https://s.shopee.vn/6KpQc2B3fo
 # Từ chối trách nhiệm!
 
 > [!CAUTION]
