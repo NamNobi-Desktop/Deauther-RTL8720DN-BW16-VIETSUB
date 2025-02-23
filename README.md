@@ -15,10 +15,18 @@ https://youtu.be/zHqKPRQ3pYo?si=s-yyb0RTVPheCdtm
  **https://youtu.be/Sd7pXUONJQg?si=1A5Zq2d1Kr36Apxs**
 
 **Video Trải Nghiệm :**
- **https://youtu.be/8u7V6v-tTYo?si=PYHyhIZ2McWOyO42**
+ **https://youtu.be/8u7V6v-tTYo?si=PYHyhIZ2McWOyO42**<br/><br/>
 
-**Link Sản Phẩm**
-https://s.shopee.vn/6KpQc2B3fo
+# Sản Phẩm mà bạn có thể quan tâm !
+**Link Sản Phẩm Hoàn Thiện**: **https://s.shopee.vn/5AdrMJSbbd**<br/>
+ 
+**Link Mạch BW16**: **https://s.shopee.vn/7AOvk4VLWf**<br/>
+
+**Bản Có Ăng-Ten** :**https://s.shopee.vn/7AOvk12Aks**<br/>
+ 
+> [!TIP]
+<ins> Lưu ý mình chỉ để xuất để các bạn hoàn thiển sản phẩm, mình không phải nhà bán hàng. Cảm ơn các bạn đã quan tâm 😜
+
 # Từ chối trách nhiệm!
 
 > [!CAUTION]
