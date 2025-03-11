@@ -1,10 +1,3 @@
-
-//Bản này chạy gửi lần lượt các mã lý do deauth đến mục tiêu >>>> BẢN NÀY OK RỒI, NÂNG CẤP THÌ BẢN SAU 
-
-// 7000 gói tin là mạnh hơn thì chưa thử
-
-// Bản này Thay Đổi Giao Diện WEB để Bán Shoppe
-
 #include "vector"
 #include "wifi_conf.h"
 #include "map"
@@ -28,8 +21,7 @@ typedef struct {
                               char *ssid = "Deauther_2-4_5GHZ"; //Mặc Định
                               char *pass = "123456789";
  
-                                                                     //  char *ssid = "Deauther_2-4_5GHZ";  /// Thay đổi tên wifi Cho Khách 
-                                                                      //  char *pass = "123456789";
+                                                                     
 
 int current_channel = 1;
 std::vector<WiFiScanResult> scan_results;
@@ -224,14 +216,7 @@ void setup() {
      IPAddress gateway(192, 168, 4, 1);  
      IPAddress subnet(255, 255, 255, 0); 
      WiFi.config(local_ip, gateway, subnet);
-
-
-                                       //WiFi.apbegin(ssid, pass, (char *) String(current_channel).c_str()); //Không ẩn đoạn này thì hiện tên wifi
-
-                                          WiFi.apbegin(ssid, pass, (char *) String(current_channel).c_str(), 1); // 1 để ẩn SSID
-
-
-
+ WiFi.apbegin(ssid, pass, (char *) String(current_channel).c_str());
   if (scanNetworks() != 0) {
     while(true) delay(1000);
   }
