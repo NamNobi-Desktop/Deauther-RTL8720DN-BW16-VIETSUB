@@ -1,3 +1,11 @@
+> [!NOTE]
+> Mình đã cập nhật lại **phiên bản mới**, **miễn phí** để mọi người có thể trải nghiệm giao diện này, và mình cũng xin ***Thông báo ngưng hỗ trợ*** phiên bản ``INO`` này và chuyển qua phiên bản ``File.BIN`` Để thuận tiện trong việc nạp code hơn! <br/>
+### Phiên Bản Mới: <br/>
+https://github.com/NamNobi-Desktop/Deauther-RTL8720DN-BW16-VIETSUB-BIN
+
+
+
+
 
 ![z6194456822918_275ed57c65cda6dfc83d8002900bc273 (1) (1)](https://github.com/user-attachments/assets/ac310a6f-ec8b-445b-8f53-3e308980b37c)
 
