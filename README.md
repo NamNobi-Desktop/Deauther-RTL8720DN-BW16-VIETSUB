@@ -26,11 +26,11 @@ https://youtu.be/zHqKPRQ3pYo?si=s-yyb0RTVPheCdtm
  **https://youtu.be/8u7V6v-tTYo?si=PYHyhIZ2McWOyO42**<br/><br/>
 
 # Sản Phẩm mà bạn có thể quan tâm !
-**Link Sản Phẩm Hoàn Thiện**: **https://s.shopee.vn/5AdrMJSbbd**<br/>
+**Link Sản Phẩm Hoàn Thiện**: **https://s.shopee.vn/1g4fIwAURM**<br/>
  
-**Link Mạch BW16**: **https://s.shopee.vn/7AOvk4VLWf**<br/>
+**Link Mạch BW16**: **https://s.shopee.vn/40Sa5PIomu**<br/>
 
-**Bản Có Ăng-Ten** :**https://s.shopee.vn/7AOvk12Aks**<br/>
+**Bản Có Ăng-Ten** :**https://s.shopee.vn/qVYJPDf8B**<br/>
 
 **Cả Bộ Ở Đây Nếu Bạn Lười:** **https://collshp.com/rtl8720dn_bw16**
  
