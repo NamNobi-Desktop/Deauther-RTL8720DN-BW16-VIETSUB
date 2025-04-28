@@ -1,5 +1,5 @@
 > [!CAUTION]
-> Mình đã cập nhật lại **phiên bản mới**, **miễn phí** để mọi người có thể trải nghiệm giao diện này, và mình cũng xin ***Thông báo ngưng hỗ trợ*** phiên bản ``INO`` này và chuyển qua phiên bản ``File.BIN`` Để thuận tiện trong việc nạp code hơn! <br/>
+> Phiên bản này hiện đã được công khai, và mình cũng xin ***Thông báo ngưng hỗ trợ*** phiên bản ``INO`` này và chuyển qua phiên bản ``File.BIN`` Để thuận tiện trong việc nạp code hơn! các bạn có thể truy cập vào link bên dưới để tải về trải nghiệm. <br/>
 ### Phiên Bản Mới: <br/>
 [https://github.com/NamNobi-Desktop/Deauther-RTL8720DN-BW16-VIETSUB-BIN](https://github.com/NamNobi-Desktop/RTL8720DN-BW16-Deauther-BIN)
 
@@ -28,26 +28,21 @@ https://youtu.be/zHqKPRQ3pYo?si=s-yyb0RTVPheCdtm
 # Sản Phẩm mà bạn có thể quan tâm !
 **Link Sản Phẩm Hoàn Thiện**: **https://s.shopee.vn/1g4fIwAURM**<br/>
  
-**Link Mạch BW16**: **https://s.shopee.vn/40Sa5PIomu**<br/>
-
 **Bản Có Ăng-Ten** :**https://s.shopee.vn/qVYJPDf8B**<br/>
 
 **Cả Bộ Ở Đây Nếu Bạn Lười:** **https://collshp.com/rtl8720dn_bw16**
  
 > [!TIP]
-<ins> Lưu ý mình chỉ để xuất để các bạn hoàn thiển sản phẩm, mình không phải nhà bán hàng. Cảm ơn các bạn đã quan tâm 😜
-
+<ins> Các bạn có thể mua sản phẩm ở bên trên để tiện cho việc tư vấn !
 
 <br/>
 <br/><br/><br/><br/>
 
-# Từ chối trách nhiệm!
-
 > [!CAUTION]
->Kho lưu trữ này được cung cấp "nguyên trạng", không có bất kỳ bảo đảm nào, dù rõ ràng hay ngụ ý, bao gồm nhưng không giới hạn ở các bảo đảm về tính thương mại, sự phù hợp cho một mục đích cụ thể hoặc không vi phạm quyền lợi. Trong mọi trường hợp, tác giả hoặc chủ sở hữu bản quyền sẽ không chịu trách nhiệm với bất kỳ yêu cầu, thiệt hại hoặc trách nhiệm nào khác, dù trong hợp đồng, lỗi dân sự hay cách khác, phát sinh từ, liên quan đến, hoặc kết nối với phần mềm hoặc việc sử dụng, khai thác phần mềm.
->Việc sử dụng kho lưu trữ này và nội dung bên trong là hoàn toàn tự nguyện và chịu rủi ro từ phía người dùng. Tác giả không đảm bảo tính chính xác, đáng tin cậy hoặc đầy đủ của bất kỳ thông tin nào mặc c cung cấp trong kho lưu trữ này.
->Bằng việc sử dụng kho lưu trữ này, bạn đồng ý với các điều khoản trên và xác nhận rằng bạn tự chịu trách nhiệm tuân thủ mọi quy định pháp luật hoặc quy tắc có liên quan.
-<ins>**CÓ NGHĨA LÀ KHI BẠN SỬ DỤNG ĐOẠN MÃ ĐƯỢC VIẾT Ở TRÊN LÀ BẠN HOÀN TOÀN CHỊU TRÁCH NHIỆM, VIỆC BẠN SỬ DỤNG SẼ KHÔNG LIÊN QUAN ĐẾN NGƯỜI PHÁT HÀNH ĐOẠN MÃ TRÊN !**</ins>
+**Tuyên bố miễn trừ trách nhiệm pháp lý**<br/><br/>
+``Tất cả các thông tin, hướng dẫn, mã nguồn, video hoặc bất kỳ nội dung nào được chia sẻ tại đây hoàn toàn mang mục đích học tập, nghiên cứu và phục vụ cho việc nâng cao kiến thức cá nhân. Tôi không khuyến khích, không xúi giục, và cũng không chịu trách nhiệm đối với bất kỳ hành vi sử dụng nội dung nào từ đây cho mục đích trái pháp luật, phá hoại, gây rối, trục lợi cá nhân, hoặc làm ảnh hưởng tiêu cực đến bất kỳ cá nhân, tổ chức hay tập thể nào tại Việt Nam hoặc bất kỳ quốc gia nào khác.``<br/><br/>
+``Việc người dùng tự ý sử dụng các nội dung được cung cấp vào các hoạt động vi phạm pháp luật, gây thiệt hại tài sản, xâm phạm quyền riêng tư, an toàn thông tin, trật tự xã hội… là hoàn toàn nằm ngoài tầm kiểm soát và ý chí của tôi. Tôi không chịu bất kỳ trách nhiệm nào về mặt pháp lý, dân sự hay hình sự, cũng như không có bất kỳ liên quan, liên đới nào dưới bất kỳ hình thức nào đối với hậu quả từ những hành vi đó.``<br/><br/>
+``Người sử dụng nội dung cần tự ý thức, tự chịu trách nhiệm trước pháp luật và hoàn toàn tự chịu hậu quả nếu sử dụng nội dung sai mục đích. Tôi khuyến khích mọi người tuân thủ pháp luật, sử dụng nội dung một cách có đạo đức và đúng đắn trong khuôn khổ pháp luật cho phép!``
 
 # Hướng dẫn sử dụng
 Bạn truy cập vào liên kết sau để tải về bộ Deauther đầy đủ : ***https://github.com/NamNobi-Desktop/Deauther-RTL8720DN-BW16-Vietsub/archive/refs/heads/main.zip*** Hoặc bạn có thể tìm đến mục"**Code**" ở phía trên và chọn vào "**Download ZIP**" Để tải bộ công cụ về máy . <br/>
