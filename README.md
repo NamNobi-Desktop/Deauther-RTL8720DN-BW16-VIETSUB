@@ -28,7 +28,7 @@ https://youtu.be/zHqKPRQ3pYo?si=s-yyb0RTVPheCdtm
 # Sản Phẩm mà bạn có thể quan tâm !
 **Link Sản Phẩm Hoàn Thiện**: **https://s.shopee.vn/2LLKZiUMRn**<br/>
  
-**Bản Có Ăng-Ten** :**https://s.shopee.vn/4fjFLjbHZ5**<br/>
+**Bản Có Ăng-Ten** :**https://s.shopee.vn/6VEQ3crzwk**<br/>
  
 > [!TIP]
 <ins> Các bạn có thể mua sản phẩm ở bên trên để tiện cho việc tư vấn !
